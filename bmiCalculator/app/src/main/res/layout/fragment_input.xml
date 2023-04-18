@@ -9,59 +9,61 @@
         android:id="@+id/waist"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="5dp"
+        android:layout_above="@+id/calculate"
+        android:layout_marginEnd="6dp"
         android:layout_marginRight="70dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="77dp"
         android:layout_toStartOf="@+id/textView2"
         android:ems="10"
         android:inputType="numberDecimal" />
 
-    <EditText
-        android:id="@+id/neck"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/waist"
-        android:layout_marginEnd="5dp"
+        android:layout_above="@+id/textView4"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="55dp"
+        android:layout_toStartOf="@+id/heightft"
+        android:text="Height"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/heightft"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/neck"
+        android:layout_marginEnd="6dp"
         android:layout_marginRight="70dp"
-        android:layout_marginBottom="48dp"
-        android:layout_toStartOf="@+id/textView3"
+        android:layout_marginBottom="46dp"
+        android:layout_toStartOf="@+id/textView7"
         android:ems="10"
         android:inputType="numberDecimal" />
 
-    <EditText
-        android:id="@+id/neck2"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/neck"
+        android:layout_alignParentRight="false"
         android:layout_marginEnd="5dp"
+        android:layout_marginRight="233dp"
+        android:layout_marginBottom="52dp"
+        android:layout_toStartOf="@+id/heightin"
+        android:text="ft."
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/heightin"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/neck"
+        android:layout_marginEnd="4dp"
         android:layout_marginRight="70dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="46dp"
         android:layout_toStartOf="@+id/textView6"
         android:ems="10"
         android:inputType="numberDecimal" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="66dp"
-        android:layout_marginBottom="54dp"
-        android:text="in."
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="66dp"
-        android:layout_marginBottom="59dp"
-        android:text="in."
-        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -69,20 +71,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView3"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="66dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="63dp"
         android:text="in."
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="54dp"
-        android:layout_toStartOf="@+id/waist"
-        android:text="Waist"
         android:textSize="24sp" />
 
     <TextView
@@ -91,20 +82,69 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="55dp"
         android:layout_toStartOf="@+id/neck"
         android:text="Neck"
         android:textSize="24sp" />
 
+    <EditText
+        android:id="@+id/neck"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/waist"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="47dp"
+        android:layout_toStartOf="@+id/textView3"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView3"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="59dp"
+        android:text="in."
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView4"
+        android:layout_above="@+id/calculate"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="54dp"
-        android:layout_toStartOf="@+id/neck2"
-        android:text="Height"
+        android:layout_marginBottom="81dp"
+        android:layout_toStartOf="@+id/waist"
+        android:text="Waist"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calculate"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="81dp"
+        android:text="in."
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Calculate"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

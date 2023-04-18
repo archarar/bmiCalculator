@@ -5,55 +5,33 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import java.lang.Math.log10
+import java.text.DecimalFormat
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [results.newInstance] factory method to
- * create an instance of this fragment.
- */
 class results : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_results, container, false)
+        val view = inflater.inflate(R.layout.fragment_results, container, false)
+        val args = this.arguments
+        val measurements = arguments?.getDoubleArray("data")
+
+        val bmiView : TextView = view.findViewById(R.id.bmi)
+
+        val height = measurements?.get(0)
+        val neck = measurements?.get(1)
+        val waist = measurements?.get(2)
+
+        // bmi calculation follows the formula: 86.01 x log10(waist - neck) - 70.041 x log10(height) + 36.76
+        val bmi = 86.01 * kotlin.math.log10(waist?.minus(neck!!)!!) - 70.041 * kotlin.math.log10(height!!) + 36.76
+
+        bmiView.text = String.format("%.2f", bmi)
+
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment results.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            results().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }

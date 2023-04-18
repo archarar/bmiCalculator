@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".input">
+
+    <EditText
+        android:id="@+id/waist"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="48dp"
+        android:layout_toStartOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/neck"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/waist"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="48dp"
+        android:layout_toStartOf="@+id/textView3"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/neck2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/neck"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="48dp"
+        android:layout_toStartOf="@+id/textView6"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="54dp"
+        android:text="in."
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="59dp"
+        android:text="in."
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="59dp"
+        android:text="in."
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="54dp"
+        android:layout_toStartOf="@+id/waist"
+        android:text="Waist"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="54dp"
+        android:layout_toStartOf="@+id/neck"
+        android:text="Neck"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="54dp"
+        android:layout_toStartOf="@+id/neck2"
+        android:text="Height"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import java.lang.Math.log10
 import java.text.DecimalFormat
@@ -21,6 +22,8 @@ class results : Fragment() {
         val measurements = arguments?.getDoubleArray("data")
 
         val bmiView : TextView = view.findViewById(R.id.bmi)
+        val back : Button = view.findViewById(R.id.back)
+        val inputFrag = input()
 
         val height = measurements?.get(0)
         val neck = measurements?.get(1)
@@ -30,6 +33,10 @@ class results : Fragment() {
         val bmi = 86.01 * kotlin.math.log10(waist?.minus(neck!!)!!) - 70.041 * kotlin.math.log10(height!!) + 36.76
 
         bmiView.text = String.format("%.2f", bmi)
+
+        back.setOnClickListener {
+            fragmentManager?.beginTransaction()?.replace(R.id.fragmentContainer, inputFrag)?.commit()
+        }
 
         return view
     }

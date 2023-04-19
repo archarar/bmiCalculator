@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.bmicalculator.app-merged_res-29:/layout_fragment_input.xml.flat",
-        "source": "com.example.bmicalculator.app-main-31:/layout/fragment_input.xml"
-    },
-    {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
@@ -56,12 +52,12 @@
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-31:\\xml\\data_extraction_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-29:\\layout_fragment_results.xml.flat",
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-31:\\layout\\fragment_results.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-31:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",

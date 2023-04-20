@@ -194,9 +194,11 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/heightft"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="47dp"
         android:src="@drawable/bmi_logo" />
 
 </RelativeLayout>

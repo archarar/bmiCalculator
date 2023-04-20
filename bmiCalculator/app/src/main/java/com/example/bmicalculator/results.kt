@@ -24,6 +24,7 @@ class results : Fragment() {
         val args = this.arguments
         val measurements = arguments?.getDoubleArray("data")
 
+        // get all widgets and input fragment
         val bmiView : TextView = view.findViewById(R.id.bmi)
         val tallest : TextView = view.findViewById(R.id.tallest)
         val shortest : TextView = view.findViewById(R.id.shortest)
@@ -32,6 +33,7 @@ class results : Fragment() {
         val inputFrag = input()
         mUsersViewModel = ViewModelProvider(this)[usersViewModel::class.java]
 
+        // get doubles from array sent by input fragment
         val heightft = measurements?.get(0)
         val heightin = measurements?.get(1)
         // total height in inches : (feet * 12) + inches
@@ -42,6 +44,7 @@ class results : Fragment() {
         // bmi calculation follows the formula: 86.01 x log10(waist - neck) - 70.041 x log10(height) + 36.76
         val bmi = 86.01 * kotlin.math.log10(waist?.minus(neck!!)!!) - 70.041 * kotlin.math.log10(heightTotal!!) + 36.76
 
+        // insert new user into the database with the current measurements
         databaseInsert(
             heightft,
             heightin!!,
@@ -50,6 +53,8 @@ class results : Fragment() {
             waist,
             bmi
         )
+
+        // execute SELECT statements to get the tallest and shortest heights as well as the average BMI. Set them to their respective TextViews
         mUsersViewModel.getTallest.observe(viewLifecycleOwner, Observer{ user ->
             val tallestft = user[0].heightft.toInt()
             val tallestin = user[0].heightin.toInt()
@@ -79,6 +84,7 @@ class results : Fragment() {
         return view
     }
 
+    // use view model to insert a new user into the database
     private fun databaseInsert(
         heightft : Double,
         heightin : Double,

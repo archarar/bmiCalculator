@@ -3,6 +3,7 @@ package com.example.bmicalculator
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+// create the USERS table and its schema
 @Entity(tableName = "USERS")
 data class user(
     val heightft : Double,

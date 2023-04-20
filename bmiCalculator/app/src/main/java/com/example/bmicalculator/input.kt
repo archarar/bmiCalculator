@@ -19,6 +19,7 @@ class input : Fragment() {
         val bundle = Bundle()
         var measurements = DoubleArray(4)
 
+        // get all widgets and results fragment
         val calculate : Button = view.findViewById(R.id.calculate)
         val heightft : EditText = view.findViewById(R.id.heightft)
         val heightin : EditText = view.findViewById(R.id.heightin)
@@ -28,6 +29,7 @@ class input : Fragment() {
         val resultsFrag = results()
 
         calculate.setOnClickListener {
+            // make error message appear if there are any empty fields
             if(
                 heightft.text.toString() == "" ||
                 heightin.text.toString() == "" ||
@@ -37,6 +39,7 @@ class input : Fragment() {
                 errorMessage.visibility = android.view.View.VISIBLE
             }
             else {
+                // turn all fields into doubles, add them to an array, and send the array to the results fragment
                 measurements[0] = heightft.text.toString().toDouble()
                 measurements[1] = heightin.text.toString().toDouble()
                 measurements[2] = neck.text.toString().toDouble()

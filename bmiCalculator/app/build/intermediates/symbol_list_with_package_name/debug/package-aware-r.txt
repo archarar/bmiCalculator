@@ -2937,6 +2937,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id average
 id back
 id barrier
 id baseline
@@ -3251,6 +3252,7 @@ id selection_type
 id sharedValueSet
 id sharedValueUnset
 id shortcut
+id shortest
 id showCustom
 id showHome
 id showTitle
@@ -3302,6 +3304,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id tallest
 id text
 id text2
 id textEnd
@@ -3310,6 +3313,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView12
+id textView13
 id textView2
 id textView3
 id textView4
@@ -3317,6 +3322,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

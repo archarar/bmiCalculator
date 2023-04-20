@@ -8,18 +8,21 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+        android:layout_width="231dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginRight="100dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="YOUR BMI IS:"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="48sp"
         android:textStyle="bold" />
 
     <TextView
@@ -27,13 +30,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView8"
-        android:layout_marginTop="9dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="0"
         android:textAlignment="center"
-        android:textSize="60sp"
+        android:textSize="96sp"
         android:textStyle="bold" />
 
     <Button
@@ -51,5 +54,74 @@
         android:textStyle="bold"
         app:icon="@android:drawable/ic_menu_revert"
         app:iconPadding="8dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Shortest User:"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="62dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Tallest User:"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/tallest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="62dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/shortest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tallest"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/textView12"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Average BMI:"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shortest"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="34sp" />
 
 </RelativeLayout>

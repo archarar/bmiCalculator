@@ -2936,6 +2936,7 @@ int id auto 0x7f080054
 int id autoComplete 0x7f080055
 int id autoCompleteToEnd 0x7f080056
 int id autoCompleteToStart 0x7f080057
+int id average 0x7f080205
 int id back 0x7f080058
 int id barrier 0x7f080059
 int id baseline 0x7f08005a
@@ -3250,6 +3251,7 @@ int id selection_type 0x7f08018e
 int id sharedValueSet 0x7f08018f
 int id sharedValueUnset 0x7f080190
 int id shortcut 0x7f080191
+int id shortest 0x7f080206
 int id showCustom 0x7f080192
 int id showHome 0x7f080193
 int id showTitle 0x7f080194
@@ -3301,6 +3303,7 @@ int id tag_transition_group 0x7f0801c1
 int id tag_unhandled_key_event_manager 0x7f0801c2
 int id tag_unhandled_key_listeners 0x7f0801c3
 int id tag_window_insets_animation_callback 0x7f0801c4
+int id tallest 0x7f080207
 int id text 0x7f0801c5
 int id text2 0x7f0801c6
 int id textEnd 0x7f0801c7
@@ -3309,6 +3312,8 @@ int id textSpacerNoTitle 0x7f0801c9
 int id textStart 0x7f0801ca
 int id textTop 0x7f0801cb
 int id textView 0x7f0801cc
+int id textView12 0x7f080208
+int id textView13 0x7f080209
 int id textView2 0x7f0801cd
 int id textView3 0x7f0801ce
 int id textView4 0x7f0801cf
@@ -3316,6 +3321,7 @@ int id textView5 0x7f0801d0
 int id textView6 0x7f0801d1
 int id textView7 0x7f0801d2
 int id textView8 0x7f0801d3
+int id textView9 0x7f08020a
 int id text_input_end_icon 0x7f0801d4
 int id text_input_error_icon 0x7f0801d5
 int id text_input_start_icon 0x7f0801d6

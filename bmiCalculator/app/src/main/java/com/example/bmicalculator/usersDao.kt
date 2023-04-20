@@ -6,14 +6,14 @@ import androidx.room.*
 @Dao
 interface usersDao {
     @Upsert
-    fun insertUser(vararg users: users)
+    fun insertUser(vararg user: user)
 
-    @Query("SELECT heightft, heightin, MAX(heightTotal) FROM USERS")
-    fun getTallest() : LiveData<List<users>>
+    @Query("SELECT heightin, heightft, MAX(heightTotal) AS heightTotal, neck, waist, bmi, id FROM USERS")
+    fun getTallest() : LiveData<List<user>>
 
-    @Query("SELECT heightft, heightin, MIN(heightTotal) FROM USERS")
-    fun getShortest() : LiveData<List<users>>
+    @Query("SELECT heightin, heightft, MIN(heightTotal) AS heightTotal, neck, waist, bmi, id FROM USERS")
+    fun getShortest() : LiveData<List<user>>
 
-    @Query("SELECT AVG(bmi) FROM USERS")
-    fun getAvgBmi() : LiveData<List<users>>
+    @Query("SELECT heightin, heightft, heightTotal, neck, waist, AVG(bmi) AS bmi, id FROM USERS")
+    fun getAvgBmi() : LiveData<List<user>>
 }

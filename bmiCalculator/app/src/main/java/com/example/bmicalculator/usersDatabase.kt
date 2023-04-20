@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.*
 import androidx.sqlite.db.SupportSQLiteOpenHelper
 
-@Database(entities = [users::class], version = 1)
+@Database(entities = [user::class], version = 1, exportSchema = false)
 abstract class usersDatabase : RoomDatabase() {
 
     abstract fun usersDao() : usersDao

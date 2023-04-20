@@ -9,9 +9,9 @@ import kotlinx.coroutines.launch
 
 class usersViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val getTallest : LiveData<List<users>>
-    private val getShortest : LiveData<List<users>>
-    private val getAvgBmi : LiveData<List<users>>
+    val getTallest : LiveData<List<user>>
+    val getShortest : LiveData<List<user>>
+    val getAvgBmi : LiveData<List<user>>
     private val repository : usersRepository
 
     init {
@@ -22,9 +22,9 @@ class usersViewModel(application: Application) : AndroidViewModel(application) {
         getAvgBmi = repository.getAvgBmi
     }
 
-    fun insertUser(users : users) {
+    fun insertUser(newUser: user) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.insertUser(users)
+            repository.insertUser(newUser)
         }
     }
 

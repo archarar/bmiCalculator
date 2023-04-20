@@ -17,7 +17,7 @@ class input : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_input, container, false)
         val bundle = Bundle()
-        var measurements = DoubleArray(3)
+        var measurements = DoubleArray(4)
 
         val calculate : Button = view.findViewById(R.id.calculate)
         val heightft : EditText = view.findViewById(R.id.heightft)
@@ -37,9 +37,10 @@ class input : Fragment() {
                 errorMessage.visibility = android.view.View.VISIBLE
             }
             else {
-                measurements[0] = (heightft.text.toString().toDouble() * 12) + heightin.text.toString().toDouble()
-                measurements[1] = neck.text.toString().toDouble()
-                measurements[2] = waist.text.toString().toDouble()
+                measurements[0] = heightft.text.toString().toDouble()
+                measurements[1] = heightin.text.toString().toDouble()
+                measurements[2] = neck.text.toString().toDouble()
+                measurements[3] = waist.text.toString().toDouble()
                 bundle.putDoubleArray("data", measurements)
                 resultsFrag.arguments = bundle
                 fragmentManager?.beginTransaction()?.replace(R.id.fragmentContainer, resultsFrag)?.commit()

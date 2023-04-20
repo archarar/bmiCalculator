@@ -4,11 +4,11 @@ import androidx.lifecycle.LiveData
 
 class usersRepository(private val usersDao : usersDao) {
 
-    suspend fun insertUser(users : users) {
-        usersDao.insertUser(users)
+    suspend fun insertUser(user: user) {
+        usersDao.insertUser(user)
     }
 
-    val getTallest : LiveData<List<users>> = usersDao.getTallest()
-    val getShortest : LiveData<List<users>> = usersDao.getShortest()
-    val getAvgBmi : LiveData<List<users>> = usersDao.getAvgBmi()
+    val getTallest : LiveData<List<user>> = usersDao.getTallest()
+    val getShortest : LiveData<List<user>> = usersDao.getShortest()
+    val getAvgBmi : LiveData<List<user>> = usersDao.getAvgBmi()
 }

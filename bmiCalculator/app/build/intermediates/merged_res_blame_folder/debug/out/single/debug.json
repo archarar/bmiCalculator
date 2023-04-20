@@ -1,15 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.bmicalculator.app-merged_res-53:/layout_fragment_results.xml.flat",
-        "source": "com.example.bmicalculator.app-main-55:/layout/fragment_results.xml"
+        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\xml_backup_rules.xml.flat",
@@ -48,12 +44,16 @@
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\drawable_wallpaper.jpg.flat",
+        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\drawable\\wallpaper.jpg"
     },
     {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\xml_data_extraction_rules.xml.flat",
@@ -76,11 +76,19 @@
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\mipmap-anydpi-v33\\ic_launcher.xml"
     },
     {
+        "merged": "com.example.bmicalculator.app-merged_res-53:/layout_fragment_input.xml.flat",
+        "source": "com.example.bmicalculator.app-main-55:/layout/fragment_input.xml"
+    },
+    {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-merged_res-53:\\drawable_bmi_logo.png.flat",
+        "source": "C:\\Users\\Abe\\.gradle\\daemon\\7.5\\com.example.bmicalculator.app-main-55:\\drawable\\bmi_logo.png"
     }
 ]
